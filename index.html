@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MISANI Nail Spa & Design — Feira de Santana</title>
+<meta name="description" content="MISANI Nail Spa & Design — unhas, sobrancelha, cílios e spa em Feira de Santana, BA. Agende seu horário pelo WhatsApp.">
+<meta property="og:title" content="MISANI Nail Spa & Design">
+<meta property="og:description" content="Unhas, sobrancelha, cílios e spa em Feira de Santana, BA. Agende pelo WhatsApp.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#f8f6f0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============================================================
+  CONFIGURAÇÃO — dados reais do negócio
+  Troque os valores marcados "TODO" abaixo e no início do script.js
+  (const BUSINESS) antes de considerar o site pronto para divulgar.
+============================================================= -->
+
+<header id="siteHeader">
+  <a class="brand" href="#top">
+    <svg class="logo-badge" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="100" cy="100" r="96" class="badge-bg"/>
+      <path class="badge-mark" d="M50,132 C50,112 50,90 50,72 C63,93 77,109 89,117 C89,117 97,109 109,93 C117,81 123,72 123,72 C123,90 123,112 123,132"/>
+      <path class="badge-mark" d="M141,78 L141,116 C141,124 148,128 156,125"/>
+      <circle cx="141" cy="66" r="6" class="badge-dot"/>
+    </svg>
+    <span>MISANI</span>
+  </a>
+
+  <nav class="navlinks">
+    <ul>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#diferenciais">Diferenciais</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#faq">Dúvidas</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav-right">
+    <a class="btn solid whatsapp js-wa" data-wa-msg="Olá! Gostaria de agendar um horário no MISANI." href="#"><span>Agendar no WhatsApp</span></a>
+  </div>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#diferenciais">Diferenciais</a></li>
+    <li><a href="#galeria">Galeria</a></li>
+    <li><a href="#faq">Dúvidas</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <a class="btn solid whatsapp js-wa" data-wa-msg="Olá! Gostaria de agendar um horário no MISANI." href="#"><span>Agendar no WhatsApp</span></a>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-eyebrow"><span class="dot"></span><span class="eyebrow">Feira de Santana · BA</span></div>
+
+        <h1>
+          <span class="hero-line"><span>Cuidado que se vê</span></span>
+          <span class="hero-line"><span>e se sente, no seu</span></span>
+          <span class="hero-word-row">
+            <span class="word-cycler" id="wordCycler"></span>
+          </span>
+        </h1>
+
+        <p class="hero-sub">MISANI Nail Spa & Design reúne técnica apurada e um ambiente pensado para o seu bem-estar — das mãos ao olhar, tudo em um só lugar.</p>
+
+        <div class="hero-cta">
+          <a class="btn solid whatsapp js-wa" data-wa-msg="Olá! Gostaria de agendar um horário no MISANI." href="#"><span>Agendar no WhatsApp</span></a>
+          <a class="btn magnetic" href="#servicos"><span>Ver serviços</span></a>
+        </div>
+
+        <ul class="trust-row">
+          <li><svg viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 5-3.4 8.4-7 9-3.6-.6-7-4-7-9V7l7-4z"/></svg>Atendimento por ordem de agenda</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>Materiais esterilizados</li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 4h16v12H7l-3 3V4z"/></svg>Resposta rápida no WhatsApp</li>
+        </ul>
+      </div>
+
+      <div class="hero-media">
+        <img src="img/hero-visual.jpg" alt="Mãos com unhas cuidadas, estética do estúdio MISANI" width="1400" height="788">
+      </div>
+    </div>
+
+    <div class="scroll-cue"><span>Role para explorar</span><span class="line"></span></div>
+  </section>
+
+  <!-- MARQUEE STRIP -->
+  <div class="strip">
+    <div class="strip-track">
+      <span>
+        <span>Unhas</span><span>Sobrancelha</span><span>Cílios</span><span>Spa</span>
+        <span>Unhas</span><span>Sobrancelha</span><span>Cílios</span><span>Spa</span>
+      </span>
+      <span>
+        <span>Unhas</span><span>Sobrancelha</span><span>Cílios</span><span>Spa</span>
+        <span>Unhas</span><span>Sobrancelha</span><span>Cílios</span><span>Spa</span>
+      </span>
+    </div>
+  </div>
+
+  <!-- DIFERENCIAIS -->
+  <section class="section" id="diferenciais">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Por que o MISANI</span>
+        <h2>Detalhes que fazem <em style="font-style:italic;color:var(--accent-bright)">a diferença</em></h2>
+        <p>Não é só um procedimento — é um cuidado pensado do início ao fim.</p>
+      </div>
+
+      <div class="diff-grid stagger">
+        <div class="diff-card reveal">
+          <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+          <h3>Higiene em primeiro lugar</h3>
+          <p>Instrumentais esterilizados e protocolo de limpeza redobrado em cada atendimento.</p>
+        </div>
+        <div class="diff-card reveal">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"/></svg>
+          <h3>Equipe especializada</h3>
+          <p>Profissionais que se atualizam nas técnicas mais recentes de unhas, sobrancelha e cílios.</p>
+        </div>
+        <div class="diff-card reveal">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <h3>Sem pressa, no seu tempo</h3>
+          <p>Atendimentos pensados para relaxar — não só para executar um procedimento.</p>
+        </div>
+        <div class="diff-card reveal">
+          <svg viewBox="0 0 24 24"><path d="M12 3l2.4 5.8L20 12l-5.6 3.2L12 21l-2.4-5.8L4 12l5.6-3.2z"/></svg>
+          <h3>Resultado que dura</h3>
+          <p>Produtos de qualidade e acabamento caprichado, feito para durar no dia a dia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="servicos">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">O que fazemos</span>
+        <h2>Um ritual, <em style="font-style:italic;color:var(--accent-bright)">quatro cuidados</em></h2>
+        <p>Da ponta dos dedos ao olhar — cada procedimento carrega a mesma atenção ao detalhe que assina o nome MISANI.</p>
+      </div>
+
+      <div class="services-grid stagger">
+        <div class="service-card reveal">
+          <div class="glow"></div>
+          <span class="num">01 — Unhas</span>
+          <div>
+            <h3>Nail Design</h3>
+            <p>Alongamento, esmaltação em gel e nail art autoral — feitos à mão, para cada formato de unha.</p>
+          </div>
+          <ul>
+            <li>Alongamento em fibra de vidro</li>
+            <li>Manicure &amp; pedicure assinatura</li>
+            <li>Nail art personalizada</li>
+            <li>Blindagem e spa das unhas</li>
+          </ul>
+          <a class="btn solid whatsapp js-wa" data-wa-msg="Olá! Gostaria de agendar Nail Design (unhas) no MISANI." href="#"><span>Agendar</span></a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="glow"></div>
+          <span class="num">02 — Sobrancelha</span>
+          <div>
+            <h3>Design & Henna</h3>
+            <p>Simetria, fio a fio e a moldura certa para valorizar o olhar de cada rosto.</p>
+          </div>
+          <ul>
+            <li>Design com henna</li>
+            <li>Laminação de sobrancelha</li>
+            <li>Correção de simetria</li>
+            <li>Manutenção mensal</li>
+          </ul>
+          <a class="btn solid whatsapp js-wa" data-wa-msg="Olá! Gostaria de agendar Design de Sobrancelha no MISANI." href="#"><span>Agendar</span></a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="glow"></div>
+          <span class="num">03 — Cílios</span>
+          <div>
+            <h3>Extensão & Lifting</h3>
+            <p>Curvatura e volume sob medida — do efeito natural ao volume russo.</p>
+          </div>
+          <ul>
+            <li>Extensão volume russo</li>
+            <li>Extensão fio a fio</li>
+            <li>Lifting de cílios</li>
+            <li>Manutenção quinzenal</li>
+          </ul>
+          <a class="btn solid whatsapp js-wa" data-wa-msg="Olá! Gostaria de agendar Extensão de Cílios no MISANI." href="#"><span>Agendar</span></a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="glow"></div>
+          <span class="num">04 — Spa</span>
+          <div>
+            <h3>Ritual Spa</h3>
+            <p>Uma pausa para mãos, pés e corpo — o respiro que a rotina pede.</p>
+          </div>
+          <ul>
+            <li>Spa das mãos e pés</li>
+            <li>Massagem relaxante express</li>
+            <li>Spa day completo</li>
+            <li>Esfoliação corporal</li>
+          </ul>
+          <a class="btn solid whatsapp js-wa" data-wa-msg="Olá! Gostaria de agendar o Ritual Spa no MISANI." href="#"><span>Agendar</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="section" id="como-funciona" style="background:var(--bg-panel);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Agendar é simples</h2>
+        <p>Três passos e seu horário está garantido.</p>
+      </div>
+
+      <div class="steps-grid stagger">
+        <div class="step-card reveal">
+          <span class="step-num">01</span>
+          <h3>Escolha o serviço</h3>
+          <p>Veja as opções acima e escolha o que combina com você hoje.</p>
+        </div>
+        <div class="step-card reveal">
+          <span class="step-num">02</span>
+          <h3>Chame no WhatsApp</h3>
+          <p>Envie uma mensagem e combine o melhor dia e horário com a equipe.</p>
+        </div>
+        <div class="step-card reveal">
+          <span class="step-num">03</span>
+          <h3>Apareça e relaxe</h3>
+          <p>É só chegar no horário combinado. Do resto, cuidamos nós.</p>
+        </div>
+      </div>
+
+      <div class="reveal" style="text-align:center;margin-top:56px;">
+        <a class="btn solid whatsapp js-wa" data-wa-msg="Olá! Gostaria de agendar um horário no MISANI." href="#"><span>Agendar agora</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section" id="galeria">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Galeria</span>
+        <h2>Um retrato do nosso trabalho</h2>
+        <p class="muted-note">Imagens ilustrativas do universo MISANI — em breve, substituídas por fotos reais do estúdio e dos trabalhos.</p>
+      </div>
+      <div class="gallery stagger">
+        <div class="g-item reveal" data-tag="Nail design">
+          <img src="img/gallery-1-nailart.jpg" alt="Mão com unhas em tom nude, nail design" loading="lazy" width="700" height="394">
+        </div>
+        <div class="g-item reveal" data-tag="Sobrancelha">
+          <img src="img/gallery-2-sobrancelha.jpg" alt="Design de sobrancelha em detalhe" loading="lazy" width="700" height="394">
+        </div>
+        <div class="g-item reveal" data-tag="Cílios">
+          <img src="img/gallery-3-cilios.jpg" alt="Extensão de cílios em detalhe" loading="lazy" width="700" height="394">
+        </div>
+        <div class="g-item reveal" data-tag="Spa dos pés">
+          <img src="img/gallery-4-spa.jpg" alt="Pés em banho de spa com pétalas" loading="lazy" width="700" height="394">
+        </div>
+        <div class="g-item reveal" data-tag="Ambiente">
+          <img src="img/gallery-5-ambiente.jpg" alt="Composição de esmaltes e acessórios de manicure" loading="lazy" width="700" height="394">
+        </div>
+        <div class="g-item reveal" data-tag="Alongamento">
+          <img src="img/gallery-6-alongamento.jpg" alt="Unhas alongadas em formato amêndoa" loading="lazy" width="700" height="394">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Quem já veio</span>
+        <h2>Histórias de quem viveu o MISANI</h2>
+        <p class="muted-note">Depoimentos ilustrativos — serão substituídos por avaliações reais de clientes.</p>
+      </div>
+    </div>
+    <div class="testi-wrap">
+      <div class="testi-track">
+        <div class="testi-card"><p>"Saí de lá me sentindo outra pessoa. Todo o cuidado com os detalhes faz toda a diferença."</p><div class="who"><span>Camila R.</span><span class="stars">★★★★★</span></div></div>
+        <div class="testi-card"><p>"O design de sobrancelha ficou perfeito para o formato do meu rosto. Recomendo demais."</p><div class="who"><span>Larissa M.</span><span class="stars">★★★★★</span></div></div>
+        <div class="testi-card"><p>"Ambiente impecável, atendimento carinhoso e o resultado do alongamento durou semanas."</p><div class="who"><span>Fernanda S.</span><span class="stars">★★★★★</span></div></div>
+        <div class="testi-card"><p>"O spa das mãos e pés é o programa perfeito pra fechar a semana. Virou ritual mensal."</p><div class="who"><span>Juliana A.</span><span class="stars">★★★★★</span></div></div>
+        <div class="testi-card"><p>"Saí de lá me sentindo outra pessoa. Todo o cuidado com os detalhes faz toda a diferença."</p><div class="who"><span>Camila R.</span><span class="stars">★★★★★</span></div></div>
+        <div class="testi-card"><p>"O design de sobrancelha ficou perfeito para o formato do meu rosto. Recomendo demais."</p><div class="who"><span>Larissa M.</span><span class="stars">★★★★★</span></div></div>
+        <div class="testi-card"><p>"Ambiente impecável, atendimento carinhoso e o resultado do alongamento durou semanas."</p><div class="who"><span>Fernanda S.</span><span class="stars">★★★★★</span></div></div>
+        <div class="testi-card"><p>"O spa das mãos e pés é o programa perfeito pra fechar a semana. Virou ritual mensal."</p><div class="who"><span>Juliana A.</span><span class="stars">★★★★★</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq" style="background:var(--bg-panel);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Dúvidas frequentes</span>
+        <h2>Antes de agendar</h2>
+      </div>
+
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q">Preciso agendar horário?<span class="faq-icon"></span></button>
+          <div class="faq-a"><p>Sim, o atendimento é por ordem de agenda. Chame no WhatsApp para confirmar o melhor dia e horário para você.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Quais formas de pagamento vocês aceitam?<span class="faq-icon"></span></button>
+          <div class="faq-a"><p>Consulte as formas de pagamento disponíveis diretamente pelo WhatsApp no momento do agendamento.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Quanto tempo dura cada procedimento?<span class="faq-icon"></span></button>
+          <div class="faq-a"><p>Varia de acordo com o serviço escolhido. A equipe informa o tempo estimado ao confirmar seu horário.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Posso remarcar ou cancelar?<span class="faq-icon"></span></button>
+          <div class="faq-a"><p>Pode sim — entre em contato com antecedência pelo WhatsApp para reagendar ou cancelar seu horário.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">É minha primeira vez, como funciona?<span class="faq-icon"></span></button>
+          <div class="faq-a"><p>Chegue alguns minutos antes, conte para a equipe o que você procura e elas te ajudam a escolher o melhor serviço.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" id="contato">
+    <div class="wrap">
+      <div class="cta reveal">
+        <span class="eyebrow">Vamos marcar?</span>
+        <h2 style="margin-top:18px;">Seu momento de cuidado<br>começa com uma mensagem</h2>
+        <p>Atendimento por ordem de agenda. Chame no WhatsApp e garanta o seu horário.</p>
+        <div class="cta-buttons">
+          <a class="btn solid whatsapp js-wa" data-wa-msg="Olá! Gostaria de agendar um horário no MISANI." href="#"><span>Chamar no WhatsApp</span></a>
+          <a class="btn js-instagram" href="#" target="_blank" rel="noopener"><span>Seguir no Instagram</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <svg class="logo-badge" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="100" cy="100" r="96" class="badge-bg"/>
+          <path class="badge-mark" d="M50,132 C50,112 50,90 50,72 C63,93 77,109 89,117 C89,117 97,109 109,93 C117,81 123,72 123,72 C123,90 123,112 123,132"/>
+          <path class="badge-mark" d="M141,78 L141,116 C141,124 148,128 156,125"/>
+          <circle cx="141" cy="66" r="6" class="badge-dot"/>
+        </svg>
+        <p>MISANI Nail Spa & Design — unhas, sobrancelha, cílios e spa em um só endereço, em Feira de Santana.</p>
+      </div>
+      <div>
+        <h4>Estúdio</h4>
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a class="js-wa" data-wa-msg="Olá! Gostaria de agendar um horário no MISANI." href="#" id="footWhatsapp"></a></li>
+          <li><a class="js-instagram" href="#" target="_blank" rel="noopener" id="footInstagram"></a></li>
+          <li><a href="#" id="footEmail"></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Endereço</h4>
+        <ul id="footAddress">
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 MISANI Nail Spa & Design. Todos os direitos reservados.</span>
+      <span>Dados de contato ilustrativos — ajustar antes da publicação oficial.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky mobile CTA bar -->
+<div class="mobile-cta-bar">
+  <a class="btn solid whatsapp js-wa" data-wa-msg="Olá! Gostaria de agendar um horário no MISANI." href="#"><span>Agendar no WhatsApp</span></a>
+</div>
+
+<!-- Floating WhatsApp button (desktop + tablet) -->
+<a class="fab-whatsapp js-wa" data-wa-msg="Olá! Gostaria de agendar um horário no MISANI." href="#" aria-label="Agendar no WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16.01 3C9.38 3 4 8.38 4 15.01c0 2.35.66 4.55 1.8 6.42L4 29l7.77-1.72a11.9 11.9 0 0 0 4.24.77h.01c6.63 0 12.01-5.38 12.01-12.01C28.03 8.38 22.65 3 16.01 3zm0 21.8c-1.5 0-2.96-.4-4.24-1.15l-.3-.18-4.6 1.02 1.05-4.48-.2-.31a9.75 9.75 0 0 1-1.5-5.18c0-5.43 4.4-9.83 9.8-9.83 2.62 0 5.08 1.02 6.93 2.87a9.72 9.72 0 0 1 2.87 6.93c0 5.43-4.41 9.83-9.81 9.83zm5.38-7.35c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.66.15-.2.3-.76.96-.93 1.16-.17.2-.34.22-.63.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.34.44-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.66-1.6-.91-2.19-.24-.58-.48-.5-.66-.5-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.75-.71 2-1.4.25-.68.25-1.27.17-1.4-.07-.12-.27-.2-.57-.35z"/></svg>
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
