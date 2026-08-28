@@ -95,6 +95,7 @@ function initScrollProgress() {
 // ---- botões com efeito magnético (seguem o cursor sutilmente) ----
 function initMagneticButtons() {
   if (PREFERS_REDUCED_MOTION) return;
+  if (window.matchMedia("(hover: none)").matches) return; // toque: sem cursor pra "seguir", e sem mouseleave garantido pra desfazer o transform
   document.querySelectorAll(".btn.magnetic").forEach((btn) => {
     const strength = 0.35;
     btn.addEventListener("mouseenter", () => btn.classList.add("is-tracking"));
