@@ -11,8 +11,6 @@
   --line:rgba(44,38,32,0.12);
   --line-strong:rgba(44,38,32,0.24);
   --logo:#877b67;
-  --wa:#25D366;
-  --wa-dark:#1da851;
   --ease:cubic-bezier(.16,.84,.44,1);
   --ease-soft:cubic-bezier(.22,1,.36,1);
 }
@@ -67,9 +65,11 @@ svg{display:block;}
 .btn.magnetic.is-tracking{transition:transform .15s var(--ease-soft),box-shadow .3s,border-color .3s,background .3s;}
 .btn span{position:relative;z-index:2;}
 .btn.solid{background:var(--accent-bright);border-color:var(--accent-bright);color:#faf8f2;}
-.btn.whatsapp{background:var(--wa);border-color:var(--wa);color:#fff;box-shadow:0 10px 26px rgba(37,211,102,.28);}
-.btn.whatsapp:hover{background:var(--wa-dark);border-color:var(--wa-dark);box-shadow:0 14px 32px rgba(37,211,102,.36);}
-.btn.whatsapp svg{width:18px;height:18px;fill:#fff;}
+/* Botões de CTA usam a cor da marca, não o verde do WhatsApp — o ícone/link
+   ainda aponta pro WhatsApp, só a cor deixou de "gritar" verde em toda a página. */
+.btn.whatsapp{background:var(--accent-bright);border-color:var(--accent-bright);color:#faf8f2;box-shadow:0 10px 26px rgba(69,60,46,.22);}
+.btn.whatsapp:hover{background:var(--accent);border-color:var(--accent);box-shadow:0 14px 32px rgba(69,60,46,.3);}
+.btn.whatsapp svg{width:18px;height:18px;fill:#faf8f2;}
 
 /* ---------- scroll progress ---------- */
 #scrollProgress{
@@ -440,8 +440,8 @@ footer ul a:hover{color:var(--cream);}
 /* ---------- floating whatsapp (desktop/tablet) ---------- */
 .fab-whatsapp{
   display:none;position:fixed;right:28px;bottom:28px;z-index:600;
-  width:58px;height:58px;border-radius:50%;background:var(--wa);
-  align-items:center;justify-content:center;box-shadow:0 14px 30px rgba(37,211,102,.4);
+  width:58px;height:58px;border-radius:50%;background:var(--accent-bright);
+  align-items:center;justify-content:center;box-shadow:0 14px 30px rgba(69,60,46,.35);
   transition:transform .3s var(--ease-soft);
 }
 .fab-whatsapp:hover{transform:scale(1.08);}
