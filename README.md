@@ -26,26 +26,24 @@ Serviços: unhas, sobrancelha, cílios e spa.
 
 ## Estrutura da página
 
-1. **Header** — logomarca real (`img/logo-misani.png`), navegação (Serviços, Diferenciais, Galeria, Dúvidas, Contato), badge "aberto agora"/"fechado", CTA "Agendar no WhatsApp"
-2. **Hero** — chamada principal com palavra rotativa + parallax sutil no visual ao mover o mouse
-3. **Faixa de marquee** — Unhas / Sobrancelha / Cílios / Spa
-4. **Diferenciais** (`#diferenciais`) — 4 cards de motivos para escolher o MISANI
-5. **Serviços** (`#servicos`) — 4 cards: Nail Design, Design & Henna (sobrancelha), Extensão & Lifting (cílios), Ritual Spa
-6. **Combos** (`#pacotes`) — banner de combos/pacotes para aumentar o ticket médio
-7. **Como funciona** (`#como-funciona`) — 3 passos para agendar
-8. **Galeria** (`#galeria`) — 6 fotos com tilt 3D no hover e lightbox ao clicar (imagens ainda placeholder, geradas via Canva)
-9. **Depoimentos** — carrossel com 4 avaliações (5 estrelas), pausa no hover
-10. **FAQ** (`#faq`) — dúvidas frequentes em acordeão
-11. **CTA final / Contato** (`#contato`) — WhatsApp e Instagram
-12. **Footer** — logomarca real, links, contato, endereço
+1. **Header** — logo, navegação (Serviços, Experiência, Galeria, Dúvidas), badge "aberto agora", CTA "Agendar horário"
+2. **Hero com sangria** — foto full-bleed (`img/hero-desktop.*` e `img/hero-mobile.*`, WebP + JPG, pré-carregadas), título, CTA principal WhatsApp + microcopy
+3. **Faixa de confiança** (`#provas`) — 4 provas: esterilização, hora marcada, durabilidade, tudo em um lugar
+4. **Serviços** (`#servicos`) — 4 cards com foto e CTA próprio com mensagem pré-preenchida
+5. **Combos** (`#pacotes`) — faixa escura de ponta a ponta
+6. **Experiência** (`#experiencia`) — imagem com sangria + 4 diferenciais
+7. **Como agendar** (`#como-funciona`) — 3 passos + CTA
+8. **Galeria** (`#galeria`) — mosaico com lightbox (imagens ainda ilustrativas)
+9. **Depoimentos** (`#depoimentos`) — carrossel (ainda ilustrativos)
+10. **FAQ** (`#faq`) — 6 objeções + CTA "tirar dúvida"
+11. **CTA final** (`#contato`) — imagem com sangria, WhatsApp, Instagram, endereço e horário
+12. **Footer**
 
-## Animações e conversão
+## Conversão
 
-- Reveal-on-scroll com blur+scale, com fallback de segurança para não travar em rolagens muito rápidas (ver `script.js`)
-- Botão "Ver serviços" com efeito magnético (segue o cursor); tilt 3D + zoom-hint na galeria; parallax no hero
-- Barra de progresso de leitura no topo; badge "aberto agora"/"fechado" calculado a partir de `BUSINESS.schedule`
-- `schema.org` (`BeautySalon`) injetado via JS a partir dos mesmos dados de `BUSINESS`, para SEO local
-- Todos os efeitos de movimento respeitam `prefers-reduced-motion`
+- Todos os CTAs `.js-wa` abrem o WhatsApp com mensagem específica; cada clique dispara `dataLayer.push({event:"whatsapp_click"})` e `fbq("track","Contact")` se GA4/GTM/Meta Pixel forem instalados
+- Barra fixa (celular) e botão flutuante (desktop) aparecem só depois do hero e somem no CTA final
+- `schema.org` `BeautySalon` gerado a partir de `BUSINESS` em `script.js`; tudo respeita `prefers-reduced-motion`
 
 ## Pendências antes de publicar oficialmente
 
@@ -58,6 +56,7 @@ O próprio site já sinaliza no rodapé: *"Dados de contato ilustrativos — aju
 - [x] Logomarca real integrada no header/footer/favicon (`img/logo-misani.png`, `img/logo-icon.png`, extraída de `logotipomisani` fornecida pelo usuário)
 - [x] Paleta de cores recalculada a partir da cor real da logomarca (`#7b705e`)
 - [x] Hero + galeria com imagens novas geradas via Canva (`gpt_image_2`), mesmo estilo/paleta — ainda são IA, não fotos reais do estúdio; trocar quando houver fotos originais
+- [ ] Trocar hero provisório (`hero-visual.jpg` reenquadrado) pela imagem nova em alta
 - [ ] Revisar depoimentos (atualmente fictícios/exemplo)
 
 ## Próximos passos
